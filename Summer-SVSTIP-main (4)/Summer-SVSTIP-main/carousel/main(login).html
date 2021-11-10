@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .dropdown:hover>.dropdown-menu {
+        display:block;
+      }
+      #dropright {
+        left: auto !important;
+        right: 0 !important;
+      }
+      #corinee {
+        margin-left: 200px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 6px;
+      }
+      .notify-badge{
+        position: absolute;
+        right:0px;
+        top:10px;
+        background:red;
+        text-align: center;
+        border-radius: 30px 30px 30px 30px;
+        color:white;
+        padding:0px 4.5px;
+        font-size:1px;
+        font-weight:bold;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="main(login).html" id="corinee">Corinee</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse" style="margin-left:50px">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Questions
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="question.html">Ask Question</a></li>
+              <li><a class="dropdown-item" href="answer.html">Answer</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown" style="margin-left:20px;">
+            <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Community
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="studygroup_m.html">Study Group</a></li>
+              <li><a class="dropdown-item" href="problems.html">Share Problems</a></li>
+            </ul>
+          </li>
+          <li class="nav-item" style="margin-left:20px;">
+            <a class="nav-link" href="ranking.html">Ranking</a>
+          </li>
+          <li class="nav-item" style="margin-left:20px;">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!--<form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" onclick="alert('이거 쓰실건가요?')">Search</button>
+        </form> -->
+      </div>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarCollapse" style="margin-right:250px;">
+        <ul class="navbar-nav ml-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="user_pay.html" style="color: rgb(230, 140, 140); margin-top: 5px; margin-right: 20px;">26500p</a>
+          </li>
+          <li class="nav-item dropdown" style="margin-right:20px;">
+            <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top:4px;">
+              <span class="notify-badge">1</span>
+              <img src="bell.jpg" style="width:20px; height:24px"/>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" id="dropright">
+              <li><a class="dropdown-item" href="answer.html">1 New Question</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://img.icons8.com/cotton/32/000000/gender-neutral-user--v3.png"/>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" id="dropright">
+              <li><a class="dropdown-item" href="mypage.html">My Page</a></li>
+              <li><a class="dropdown-item" href="mypage_setting.html">Settings</a></li>
+              <li><a class="dropdown-item" href="main(logout).html">Logout</a></li>
+            </ul>
+          </li>
+    </div>
+
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" />
+        <image width="100%" height="100%" xlink:href="https://cdn.pixabay.com/photo/2017/07/31/11/46/laptop-2557586__340.jpg"/>
+      </svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <!-- <p style="text-align: center; margin-left: 990px; margin-bottom:  120px;"><a class="btn btn-lg btn-dark" href="#">클릭버튼</a></p> -->
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" />
+          <image width="100%" height="100%" xlink:href="https://cdn.pixabay.com/photo/2020/12/09/10/34/meeting-5817031__340.jpg"/>
+        </svg>
+
+      </div>
+
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+  <p style="text-align: center; font-size: 25px; font-weight: bold; margin-bottom: 25px;">Mentors of the month</p>
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="white"/><text x="50%" y="50%" fill="#FFFFFF" dy=".3em">140x140</text>
+          <image width="100%" height="100%" xlink:href="https://media.istockphoto.com/photos/attractive-man-dressed-casually-in-studio-isolated-on-white-picture-id462112713?b=1&k=6&m=462112713&s=170667a&w=0&h=m6SXqOhHuYb99ULtKh3hlUQ5Nx2_VoXl6V2zN38lYYs="/>
+       
+        </svg>
+
+        <h2>Gihong Park</h2>
+        <p>He is known for one of the great C++ mentors in our system.</p>
+        <p><a class="btn btn-secondary" href="mentor1.html">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          <image width="100%" height="100%" xlink:href="https://media.istockphoto.com/photos/official-portrait-of-a-blonde-woman-picture-id515596766?b=1&k=6&m=515596766&s=170667a&w=0&h=Ui5ZcUeHvcs6Yk79aNqDFqT55cZlKyz4tSFC_JxXamk="/>
+        </svg>
+
+        <h2>Seungyeon Yoo</h2>
+        <p>She provides you detailed solutions when you have trouble in making python codes.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="white"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          <image width="100%" height="100%" xlink:href="https://media.istockphoto.com/photos/portrait-of-an-african-american-man-with-glasses-picture-id502581380?b=1&k=6&m=502581380&s=170667a&w=0&h=a1ThsmBRYlE24CJiRSWxcxDsFqbeGoPNDH2j2eMy9_A="/>   
+        </svg>
+
+        <h2>Changyun Lee</h2>
+        <p>He will be the most appropriate helper for your Java experience.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Try our fast matching system!</h2>
+        <p class="lead" style="margin-top: 50px;">We provide you precise solutions by 1 on 1 matching system.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="white"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          <image width="100%" height="100%" xlink:href="https://cdn.pixabay.com/photo/2017/06/26/13/16/mentor-2443788__340.jpg"/> 
+        </svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Make your own study group!</h2>
+        <p class="lead" style="margin-top: 50px;">We provide you opportunities to study with various people.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="white"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          <image width="100%" height="100%" xlink:href="https://cdn.pixabay.com/photo/2016/03/09/09/14/books-1245690__340.jpg"/>  
+        </svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+<!-- 
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider"> -->
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2021 Number one, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>

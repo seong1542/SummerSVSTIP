@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+       .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        .dropdown:hover>.dropdown-menu {
+        display:block;
+        }
+        #dropright {
+            left: auto !important;
+            right: 0 !important;
+        }
+        #corinee {
+            margin-left: 200px;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 6px;
+        }
+        .notify-badge{
+            position: absolute;
+            right:0px;
+            top:10px;
+            background:red;
+            text-align: center;
+            border-radius: 30px 30px 30px 30px;
+            color:white;
+            padding:0px 4.5px;
+            font-size:1px;
+            font-weight:bold;
+        }
+        
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="carousel.css" rel="stylesheet"> -->
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="main(login).html" id="corinee">Corinee</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse" style="margin-left:50px">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Questions
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="question.html">Ask Question</a></li>
+                <li><a class="dropdown-item" href="answer.html">Answer</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" style="margin-left:20px;">
+              <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Community
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="studygroup_m.html">Study Group</a></li>
+                <li><a class="dropdown-item" href="problems.html">Share Problems</a></li>
+              </ul>
+            </li>
+            <li class="nav-item" style="margin-left:20px;">
+              <a class="nav-link" href="ranking.html">Ranking</a>
+            </li>
+            <li class="nav-item" style="margin-left:20px;">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <!--<form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" onclick="alert('이거 쓰실건가요?')">Search</button>
+          </form> -->
+        </div>
+        <div class="navbar-collapse collapse justify-content-end" id="navbarCollapse" style="margin-right:250px;">
+          <ul class="navbar-nav ml-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="user_pay.html" style="color: rgb(230, 140, 140); margin-top: 5px; margin-right: 20px;">26500p</a>
+            </li>
+            <li class="nav-item dropdown" style="margin-right:20px;">
+              <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top:4px;">
+                <span class="notify-badge">1</span>
+                <img src="bell.jpg" style="width:20px; height:24px"/>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" id="dropright">
+                <li><a class="dropdown-item" href="answer.html">1 New Question</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://img.icons8.com/cotton/32/000000/gender-neutral-user--v3.png"/>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" id="dropright">
+                <li><a class="dropdown-item" href="mypage.html">My Page</a></li>
+                <li><a class="dropdown-item" href="mypage_setting.html">Settings</a></li>
+                <li><a class="dropdown-item" href="main(logout).html">Logout</a></li>
+              </ul>
+            </li>
+      </div>
+  
+      </div>
+    </nav>
+  </header>
+
+    <div class="col-md-12 bootstrap snippets bootdeys">
+    <div class="x_panel">
+        <div class="x_content">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12" style="text-align:center;">
+                    <ul class="pagination pagination-split">
+                        <li><a href="#" style="background-color: #768399; color: white;">1</a>
+                        </li>
+                        <li><a href="#">2</a>
+                        </li>
+                        <li><a href="#">3</a>
+                        </li>
+                        <li><a href="#">4</a>
+                        </li>
+                        <li><a href="#">5</a>
+                        </li>
+                        <li>...</li>
+                        <li><a href="#">6</a>
+                        </li>
+                        <li><a href="#">7</a>
+                        </li>
+                        <li><a href="#">8</a>
+                        </li>
+                        <li><a href="#">9</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
+                    <div class="well profile_view">
+                        <div class="col-sm-12">
+                            <h4 class="brief"><i>Digital Strategist</i></h4>
+                            <div class="left col-xs-7">
+                                <h2>Gihong Park</h2>
+                                <p><strong>About: </strong> Web Designer / UI. </p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-phone"></i> Address: </li>
+                                </ul>
+                            </div>
+                            <div class="right col-xs-5 text-center">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="img-circle img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 bottom text-center">
+                            <div class="col-xs-12 col-sm-6 emphasis">
+                                <p class="ratings">
+                                    <a>5.0</a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 emphasis">
+                                <button type="button" class="btn btn-success btn-xs" onclick="window.location.href='./chat.html'"> 
+                                    <i class="fa fa-user"></i> 
+                                    <i class="fa fa-comments-o"></i>  
+                                </button>
+                                <button type="button" class="btn btn-primary btn-xs"  onclick="window.location.href='./mentor1.html'"> 
+                                    <i class="fa fa-user"></i> View Profile 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
+                    <div class="well profile_view">
+                        <div class="col-sm-12">
+                            <h4 class="brief"><i>Digital Strategist</i></h4>
+                            <div class="left col-xs-7">
+                                <h2>Nicole Pearson</h2>
+                                <p><strong>About: </strong> Web Designer / UI. </p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-phone"></i> Address: </li>
+                                </ul>
+                            </div>
+                            <div class="right col-xs-5 text-center">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="img-circle img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 bottom text-center">
+                            <div class="col-xs-12 col-sm-6 emphasis">
+                                <p class="ratings">
+                                    <a>5.0</a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 emphasis">
+                                <button type="button" class="btn btn-success btn-xs"> 
+                                    <i class="fa fa-user"></i> 
+                                    <i class="fa fa-comments-o"></i>  
+                                </button>
+                                <button type="button" class="btn btn-primary btn-xs"> 
+                                    <i class="fa fa-user"></i> View Profile 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
+                    <div class="well profile_view">
+                        <div class="col-sm-12">
+                            <h4 class="brief"><i>Digital Strategist</i></h4>
+                            <div class="left col-xs-7">
+                                <h2>Nicole Pearson</h2>
+                                <p><strong>About: </strong> Web Designer / UI. </p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-phone"></i> Address: </li>
+                                </ul>
+                            </div>
+                            <div class="right col-xs-5 text-center">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" class="img-circle img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 bottom text-center">
+                            <div class="col-xs-12 col-sm-6 emphasis">
+                                <p class="ratings">
+                                    <a>5.0</a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 emphasis">
+                                <button type="button" class="btn btn-success btn-xs"> 
+                                    <i class="fa fa-user"></i> 
+                                    <i class="fa fa-comments-o"></i>  
+                                </button>
+                                <button type="button" class="btn btn-primary btn-xs"> 
+                                    <i class="fa fa-user"></i> View Profile 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
+                    <div class="well profile_view">
+                        <div class="col-sm-12">
+                            <h4 class="brief"><i>Digital Strategist</i></h4>
+                            <div class="left col-xs-7">
+                                <h2>Nicole Pearson</h2>
+                                <p><strong>About: </strong> Web Designer / UI. </p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-phone"></i> Address: </li>
+                                </ul>
+                            </div>
+                            <div class="right col-xs-5 text-center">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="" class="img-circle img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 bottom text-center">
+                            <div class="col-xs-12 col-sm-6 emphasis">
+                                <p class="ratings">
+                                    <a>5.0</a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 emphasis">
+                                <button type="button" class="btn btn-success btn-xs"> 
+                                    <i class="fa fa-user"></i> 
+                                    <i class="fa fa-comments-o"></i>  
+                                </button>
+                                <button type="button" class="btn btn-primary btn-xs"> 
+                                    <i class="fa fa-user"></i> View Profile 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
+                    <div class="well profile_view">
+                        <div class="col-sm-12">
+                            <h4 class="brief"><i>Digital Strategist</i></h4>
+                            <div class="left col-xs-7">
+                                <h2>Nicole Pearson</h2>
+                                <p><strong>About: </strong> Web Designer / UI. </p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-phone"></i> Address: </li>
+                                </ul>
+                            </div>
+                            <div class="right col-xs-5 text-center">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="" class="img-circle img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 bottom text-center">
+                            <div class="col-xs-12 col-sm-6 emphasis">
+                                <p class="ratings">
+                                    <a>5.0</a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 emphasis">
+                                <button type="button" class="btn btn-success btn-xs"> 
+                                    <i class="fa fa-user"></i> 
+                                    <i class="fa fa-comments-o"></i>  
+                                </button>
+                                <button type="button" class="btn btn-primary btn-xs"> 
+                                    <i class="fa fa-user"></i> View Profile 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
+                    <div class="well profile_view">
+                        <div class="col-sm-12">
+                            <h4 class="brief"><i>Digital Strategist</i></h4>
+                            <div class="left col-xs-7">
+                                <h2>Nicole Pearson</h2>
+                                <p><strong>About: </strong> Web Designer / UI. </p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-phone"></i> Address: </li>
+                                </ul>
+                            </div>
+                            <div class="right col-xs-5 text-center">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="" class="img-circle img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 bottom text-center">
+                            <div class="col-xs-12 col-sm-6 emphasis">
+                                <p class="ratings">
+                                    <a>4.5</a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star"></span></a>
+                                    <a href="#"><span class="fa fa-star-half"></span></a>
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 emphasis">
+                                <button type="button" class="btn btn-success btn-xs"> 
+                                    <i class="fa fa-user"></i> 
+                                    <i class="fa fa-comments-o"></i>  
+                                </button>
+                                <button type="button" class="btn btn-primary btn-xs"> 
+                                    <i class="fa fa-user"></i> View Profile 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    <style type="text/css">
+    
+    .profile_view {
+        margin-bottom: 20px;
+        display: inline-block;
+        width: 100%;
+            -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
+    }
+    .profile_view:hover {
+        -webkit-box-shadow: 0 14px 12px 0 rgba(0,0,0,0.17),0 20px 40px 0 rgba(0,0,0,0.3);
+        box-shadow: 0 14px 12px 0 rgba(0,0,0,0.17),0 20px 40px 0 rgba(0,0,0,0.3);    
+    }
+    .well.profile_view {
+        padding: 10px 0 0;
+    }
+    
+    .well.profile_view .divider {
+        border-top: 1px solid #e5e5e5;
+        padding-top: 5px;
+        margin-top: 5px;
+    }
+    
+    .well.profile_view .ratings {
+        margin-bottom: 0;
+    }
+    
+    .pagination.pagination-split li {
+        display: inline-block;
+        margin-right: 3px;
+    }
+    
+    .pagination.pagination-split li a {
+        border-radius: 4px;
+        color: #768399;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+    }
+    
+    .well.profile_view {
+        background: #fff;
+    }
+    
+    .well.profile_view .bottom {
+        margin-top: -20px;
+        background: #F2F5F7;
+        padding: 9px 0;
+        border-top: 1px solid #E6E9ED;
+    }
+    
+    .well.profile_view .left {
+        margin-top: 20px;
+    }
+    
+    .well.profile_view .left p {
+        margin-bottom: 3px;
+    }
+    
+    .well.profile_view .right {
+        margin-top: 0px;
+        padding: 10px;
+    }
+    
+    .well.profile_view .img-circle {
+        border: 1px solid #E6E9ED;
+        padding: 2px;
+    }
+    
+    .well.profile_view h2 {
+        margin: 5px 0;
+        font-size:14px;
+        font-weight:bold;
+    }
+    
+    .well.profile_view .ratings {
+        text-align: left;
+        font-size: 16px;
+    }
+    
+    .well.profile_view .brief {
+        margin: 0;
+        font-weight: 300;
+    }
+    
+    .profile_left {
+        background: white;
+    }
+    </style>
+    
+    <script type="text/javascript">
+    
+    </script>
+</body>

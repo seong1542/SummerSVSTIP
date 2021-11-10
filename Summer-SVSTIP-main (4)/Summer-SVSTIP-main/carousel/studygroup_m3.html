@@ -1,0 +1,349 @@
+<!--스터디그룹 페이지에서 Recruitment complete 클릭시 나오는 페이지 -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        #test_btn1{
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+        #btn_group button{
+          border: 1px;
+          background-color: rgba(0,0,0,0);
+          padding: 5px;
+        }
+        .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .dropdown:hover>.dropdown-menu {
+        display:block;
+      }
+      #dropright {
+        left: auto !important;
+        right: 0 !important;
+      }
+      #corinee {
+        margin-left: 200px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 6px;
+      }
+      .notify-badge{
+        position: absolute;
+        right:0px;
+        top:10px;
+        background:red;
+        text-align: center;
+        border-radius: 30px 30px 30px 30px;
+        color:white;
+        padding:0px 4.5px;
+        font-size:1px;
+        font-weight:bold;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <style>
+        #st1 {
+            display: inline-block;
+            padding: 20px 0 20px;
+            vertical-align: middle;
+        }
+        #btn1 {
+            text-decoration: underline;
+            position: relative;
+            display: block;
+            padding: 16px 0;
+            margin: 0 50px;
+            font-size: 20px;
+            line-height: 16px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.753);
+            border:none;
+            background-color: white;
+            text-underline-offset:8px;
+        }
+        #btn2 {
+            position: relative;
+            display: block;
+            padding: 16px 0;
+            margin: 0 50px;
+            font-size: 20px;
+            line-height: 16px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.753);
+            border:none;
+            background-color: white;
+            text-underline-offset:8px;
+        }
+        #btn3 {
+            position: relative;
+            display: block;
+            padding: 16px 0;
+            margin: 0 50px;
+            font-size: 20px;
+            line-height: 16px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.753);
+            border:none;
+            background-color: white;
+            text-underline-offset:8px;
+        }
+    </style>
+    <style type="text/css">
+      a:link { color: red; text-decoration: none;}
+      a:visited { color: black; text-decoration: none;}
+      a:hover { color: blue; text-decoration: underline;}
+    </style>
+
+    <link href="carousel.css" rel="stylesheet">
+    <style>
+        #st2 {
+            display: inline-block;
+            padding: 20px 0 20px;
+            vertical-align: middle;
+        }
+        #st3 {
+            text-decoration: none;
+            position: relative;
+            display: block;
+            padding: 16px 0;
+            margin: 0 50px;
+            font-size: 20px;
+            line-height: 16px;
+            font-weight: 600;
+            color: #C0C0C0;
+            border:none;
+            background-color: white;
+            text-underline-offset:8px;
+        }
+        #st4 {
+            text-decoration: none;
+            position: relative;
+            display: block;
+            padding: 16px 0;
+            margin: 0 50px;
+            font-size: 20px;
+            line-height: 16px;
+            font-weight: 600;
+            color: #000000;
+            border:none;
+            background-color: white;
+            text-underline-offset:8px;
+        }
+    </style>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="main(login).html" id="corinee">Corinee</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse" style="margin-left:50px">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Questions
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="question.html">Ask Question</a></li>
+                <li><a class="dropdown-item" href="answer.html">Answer</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" style="margin-left:20px;">
+              <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Community
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="studygroup_m.html">Study Group</a></li>
+                <li><a class="dropdown-item" href="problems.html">Share Problems</a></li>
+              </ul>
+            </li>
+            <li class="nav-item" style="margin-left:20px;">
+              <a class="nav-link" href="ranking.html">Ranking</a>
+            </li>
+            <li class="nav-item" style="margin-left:20px;">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <!--<form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" onclick="alert('이거 쓰실건가요?')">Search</button>
+          </form> -->
+        </div>
+        <div class="navbar-collapse collapse justify-content-end" id="navbarCollapse" style="margin-right:250px;">
+          <ul class="navbar-nav ml-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="user_pay.html" style="color: rgb(230, 140, 140); margin-top: 5px; margin-right: 20px;">26500p</a>
+            </li>
+            <li class="nav-item dropdown" style="margin-right:20px;">
+              <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top:4px;">
+                <span class="notify-badge">1</span>
+                <img src="bell.jpg" style="width:20px; height:24px"/>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" id="dropright">
+                <li><a class="dropdown-item" href="answer.html">1 New Question</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://img.icons8.com/cotton/32/000000/gender-neutral-user--v3.png"/>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" id="dropright">
+                <li><a class="dropdown-item" href="mypage.html">My Page</a></li>
+                <li><a class="dropdown-item" href="mypage_setting.html">Settings</a></li>
+                <li><a class="dropdown-item" href="main(logout).html">Logout</a></li>
+              </ul>
+            </li>
+      </div>
+  
+      </div>
+    </nav>
+  </header>
+    <!---->
+
+  <form style="margin-top: 50px; margin-left: 50px;">
+    <h1><strong>Study Group</strong></h1>
+    <td style='letter-spacing:50px'>
+    <h5>Try to recruit a study group to study with.</h5></td>
+
+    <div class="box" style="border-bottom:5px solid whitesmoke; height:80px; min-width: 82%;">
+        <nav>
+            <ul>
+                <li id="st2" class="item"><a id="st3" href="studygroup_m.html">The whole</a></li>
+                <li id="st2" class="item"><a id="st3" href="studygroup_m2.html">Recruiting</a></li>
+                <li id="st2" class="item"><a id="st4" href="studygroup_m3.html">Recruitment complete</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <body>
+  	<section class="ftco-section">
+  		<div class="container">
+  			<div class="row justify-content-center">
+  			</div>
+  			<div class="row">
+  				<div class="col-md-12">
+  					<div class="table-wrap">
+  						<table class="table">
+  						  <thead class="thead-primary">
+                  <tr>
+                    <th>Number</th>
+                    <th>Recruitment</th>
+                    <th>Tilte</th>
+                    <th>Writer</th>
+                    <th>Date</th>
+                    <th>Views</th>
+                    <th>Like</th>
+                  </tr>
+  						  </thead>
+  						  <tbody>
+  						    <tr>
+  						      <th scope="row">1</th>
+                    <td>모집완료</td>
+  						      <td><a href='studygroup_r.html'>구합니다</td>
+  						      <td>혜</td>
+  						      <td>2021-08-05</td>
+                    <td>12</td>
+                    <td>3</td>
+  						    </tr>
+                  <tr>
+  						      <th scope="row">2</th>
+                    <td>모집완료</td>
+  						      <td><a href='studygroup_r.html'>구합니다</td>
+  						      <td>혜</td>
+  						      <td>2021-08-05</td>
+                    <td>12</td>
+                    <td>3</td>
+  						    </tr>
+                  <tr>
+  						      <th scope="row">3</th>
+                    <td>모집완료</td>
+  						      <td><a href='studygroup_r.html'>구합니다</td>
+  						      <td>혜</td>
+  						      <td>2021-08-05</td>
+                    <td>12</td>
+                    <td>3</td>
+  						    </tr>
+  						  </tbody>
+  						</table>
+  				</div>
+  			</div>
+  		</div>
+      <div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="btn_group" style='text-align: right;'>
+        <input type = "text", placeholder = "Search">
+        <button type="button" class="btn btn-primary" style="margin-right: 20px" onClick="location.href='studygroup_s.html'">Search</button>
+        <button type="button" class="btn btn-primary" onClick="location.href='studygroup_w.html'">Writing</button>
+      </div>
+
+  	</section>
+
+  	<script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+  	</body>
+</html>

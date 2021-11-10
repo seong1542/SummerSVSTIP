@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        .tb_list3 table { width: 1000px; color: #636363; font-size: 15px;}
+        .tb_list3 th { width: 200px; padding: 16px 0 13px 20px; color: #505050; text-align: left; vertical-align: top; border-bottom: 1px solid #e5e5e5; border-right: 1px solid #dfdfdf; background-color: #f8f8f8; letter-spacing: -0.5px;}
+        .btn_corm {margin: 15px 0; text-align: center; position: relative;}
+        .btn_corm1 {display: inline-block; padding: 0 30px; height: 34px; line-height: 32px; font-size: 12px; font-weight: bold; color: #fff; text-align: center; background-color: #6286de; border: 1px solid #5a78c0; border-radius: 2px;}
+        .tb_list3 td {position: ralative; color: #333; text-align: left; border-bottom: 1px solid #e5e5e5; padding: 9px 10px 10px 20px;}
+        .tb_list3 .up_txt2 {color: #eb4a3f;}
+        .container_title {position: relative; font-size: 35px; color: #1a1a1a; letter-spacing: -0.5px; word-spacing: -0.5px; font-weight: bold; margin-bottom: 5px; padding: 0 0 10px 4px; border-bottom: 2px solid #7e8594;}
+        .tb_list3 .up_txt1 {color: #496abc; font-weight: bold;}
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        .dropdown:hover>.dropdown-menu {
+        display:block;
+        }
+        #dropright {
+          left: auto !important;
+          right: 0 !important;
+        }
+        #corinee {
+          margin-left: 200px;
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 6px;
+        }
+        .notify-badge{
+          position: absolute;
+          right:0px;
+          top:10px;
+          background:red;
+          text-align: center;
+          border-radius: 30px 30px 30px 30px;
+          color:white;
+          padding:0px 4.5px;
+          font-size:1px;
+          font-weight:bold;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <style>
+        #st1 {
+            display: inline-block;
+            padding: 20px 0 20px;
+            vertical-align: middle;
+        }
+        #btn1 {
+            text-decoration: underline;
+            position: relative;
+            display: block;
+            padding: 16px 0;
+            margin: 0 50px;
+            font-size: 20px;
+            line-height: 16px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.753);
+            border:none;
+            background-color: white;
+            text-underline-offset:8px;
+        }
+        #btn2 {
+            position: relative;
+            display: block;
+            padding: 16px 0;
+            margin: 0 50px;
+            font-size: 20px;
+            line-height: 16px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.753);
+            border:none;
+            background-color: white;
+            text-underline-offset:8px;
+        }
+        #btn3 {
+            position: relative;
+            display: block;
+            padding: 16px 0;
+            margin: 0 50px;
+            font-size: 20px;
+            line-height: 16px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.753);
+            border:none;
+            background-color: white;
+            text-underline-offset:8px;
+        }
+        #btn4 {
+            position: relative;
+            display: block;
+            padding: 16px 0;
+            margin: 0 50px;
+            font-size: 20px;
+            line-height: 16px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.753);
+            border:none;
+            background-color: white;
+            text-underline-offset:8px;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="main(login).html" id="corinee">Corinee</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse" style="margin-left:50px">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Questions
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="question.html">Ask Question</a></li>
+                  <li><a class="dropdown-item" href="answer.html">Answer</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown" style="margin-left:20px;">
+                <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Community
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="studygroup_m.html">Study Group</a></li>
+                  <li><a class="dropdown-item" href="problems.html">Share Problems</a></li>
+                </ul>
+              </li>
+              <li class="nav-item" style="margin-left:20px;">
+                <a class="nav-link" href="ranking.html">Ranking</a>
+              </li>
+              <li class="nav-item" style="margin-left:20px;">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <!--<form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" onclick="alert('이거 쓰실건가요?')">Search</button>
+            </form> -->
+          </div>
+          <div class="navbar-collapse collapse justify-content-end" id="navbarCollapse" style="margin-right:250px;">
+            <ul class="navbar-nav ml-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="user_pay.html" style="color: rgb(230, 140, 140); margin-top: 5px; margin-right: 20px;">26500p</a>
+              </li>
+              <li class="nav-item dropdown" style="margin-right:20px;">
+                <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top:4px;">
+                  <span class="notify-badge">1</span>
+                  <img src="bell.jpg" style="width:20px; height:24px"/>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" id="dropright">
+                  <li><a class="dropdown-item" href="answer.html">1 New Question</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://img.icons8.com/cotton/32/000000/gender-neutral-user--v3.png"/>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" id="dropright">
+                  <li><a class="dropdown-item" href="mypage.html">My Page</a></li>
+                  <li><a class="dropdown-item" href="mypage_setting.html">Settings</a></li>
+                  <li><a class="dropdown-item" href="main(logout).html">Logout</a></li>
+                </ul>
+              </li>
+        </div>
+    
+        </div>
+      </nav>
+    </header>
+    <div class="box-container" style="display: inline-flex; margin:2%; min-width:94%; min-height:1000px;">
+        <div class="box" style="background-color:whitesmoke; width:300px;margin-top:75px;">
+          <svg class="bd-placeholder-img rounded-circle" width="100%" height="35%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="white"/><text x="50%" y="50%" fill="#FFFFFF" dy=".3em">140x140</text>
+            <image width="100%" height="100%" xlink:href="http://www.dhcom.co.kr/wp-content/uploads/2016/09/corporate-man-laptop.jpg"/>
+          </svg>
+  
+          <h2 style="text-align: center; margin-top: 40px; text-decoration: underline; text-underline-offset:20px; color: rgba(0, 0, 0, 0.664);">
+            Your ID
+          </h2>
+        </div>
+        
+        <div class="box" style="border-bottom:5px solid whitesmoke; height:80px; min-width: 82%;">
+            <nav>
+                <ul>
+                    <li id="st1" class="item"><button id="btn1" 
+                        onclick="document.getElementById('btn1').style['text-decoration']='underline';
+                        document.getElementById('btn2').style['text-decoration']='none';
+                        document.getElementById('btn3').style['text-decoration']='none';
+                        document.getElementById('btn4').style['text-decoration']='none';"
+                        >Your Questions</button></li>
+                    <li id="st1" class="item"><button id="btn2" 
+                        onclick="document.getElementById('btn2').style['text-decoration']='underline';
+                        document.getElementById('btn1').style['text-decoration']='none';
+                        document.getElementById('btn3').style['text-decoration']='none';
+                        document.getElementById('btn4').style['text-decoration']='none';"
+                        >Your StudyGroup</button></li>
+                    <li id="st1" class="item"><button id="btn3"
+                        onclick="document.getElementById('btn3').style['text-decoration']='underline';
+                        document.getElementById('btn1').style['text-decoration']='none';
+                        document.getElementById('btn2').style['text-decoration']='none';
+                        document.getElementById('btn4').style['text-decoration']='none';"
+                        >Settings</button></li>
+                    <li id="st1" class="item"><button id="btn4"
+                        onclick="document.getElementById('btn4').style['text-decoration']='underline';
+                        document.getElementById('btn3').style['text-decoration']='none';
+                        document.getElementById('btn1').style['text-decoration']='none';
+                        document.getElementById('btn2').style['text-decoration']='none';"
+                        >Point to Money</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container" style="top:200px; left:300px; position:absolute; max-width:1150px;">
+	<h3 class="container_title">From Point to Money</h3>
+	<div class="my_notice">
+	  <ul>
+	    <li>Proceeds (sales revenue) can be applied to your account under your name and will be deposited on the business day <em>after you apply.</em></li>
+	    <li>Corinee will not be responsible for withdrawals due to incorrect account number.</li>
+	  </ul>
+	</div>
+
+	<form>
+	  <div class="tb_list3">
+	    <table cellspacing="0" cellpadding="0" border="0">
+	      <tbody>
+	        <tr>
+	          <th>Depositor</th>
+	          <td>SeungYeon, Yoo</td>
+	        </tr>
+	        <tr>
+	          <th>Bank</th>
+	          <td>
+	            <div class="input-group mb-3">
+ 		<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Bank_Name</button>
+  		<ul class="dropdown-menu">
+		    <li><a class="dropdown-item" href="#">ShinHanBank</a></li>
+		    <li><a class="dropdown-item" href="#">HanaBank</a></li>
+		    <li><a class="dropdown-item" href="#">KaKaoBank</a></li>
+		</ul>
+  	                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+	             </div>
+	         </td>
+	        </tr>
+
+	        <tr>
+	          <th>Your Point</th>
+	          <td>
+	            <span class="up_txt1"><em>650,000 point<em></span>
+	         </td>
+	        </tr>
+	        <tr>
+	          <th>Amount requested</th>
+	          <td class="1p30">
+		<input type="number" class="up_in3" style="width:200px;" name="price" id="price"> Won 
+	                <span class="up_txt2">(You can withdraw more than 5,000 won)</span>
+	          </td>
+	        </tr>
+	        <tr>
+	          <th>Fee</th>
+	          <td>
+	            <span id="widthdrawlFee">20%</span>
+	            <button type="button" class="btn btn-secondary">coupon</button>
+	          </td>
+	        </tr>
+	        <tr>
+	          <th>You can get</th>
+	          <td>
+	            <span class="up_txt2">0 won</span>
+	         </td>
+	        </tr>
+	      </tbody>
+	    </table>
+	  </div>
+	  <div class="btn_corm" style="margin-bottom: 30px">
+	    <a title="apply" class="btn_corm1">Apply</a>
+	  </div>
+	</form>
+        </div>
+    </div>
+  </body>
+</html>

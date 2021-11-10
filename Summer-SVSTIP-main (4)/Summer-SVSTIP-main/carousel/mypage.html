@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        .dropdown:hover>.dropdown-menu {
+        display:block;
+        }
+        #dropright {
+            left: auto !important;
+            right: 0 !important;
+        }
+        #corinee {
+            margin-left: 200px;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 6px;
+        }
+        .notify-badge{
+            position: absolute;
+            right:0px;
+            top:10px;
+            background:red;
+            text-align: center;
+            border-radius: 30px 30px 30px 30px;
+            color:white;
+            padding:0px 4.5px;
+            font-size:1px;
+            font-weight:bold;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <style>
+        #st1 {
+            display: inline-block;
+            padding: 20px 0 20px;
+            vertical-align: middle;
+        }
+        #st2 {
+            text-decoration: none;
+            position: relative;
+            display: block;
+            padding: 16px 0;
+            margin: 0 50px;
+            font-size: 20px;
+            line-height: 16px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.753);
+            border:none;
+            background-color: white;
+            text-underline-offset:8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="main(login).html" id="corinee">Corinee</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse" style="margin-left:50px">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Questions
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="question.html">Ask Question</a></li>
+                      <li><a class="dropdown-item" href="answer.html">Answer</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown" style="margin-left:20px;">
+                    <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Community
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="studygroup_m.html">Study Group</a></li>
+                      <li><a class="dropdown-item" href="problems.html">Share Problems</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item" style="margin-left:20px;">
+                    <a class="nav-link" href="ranking.html">Ranking</a>
+                  </li>
+                  <li class="nav-item" style="margin-left:20px;">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+                <!--<form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" onclick="alert('이거 쓰실건가요?')">Search</button>
+                </form> -->
+              </div>
+              <div class="navbar-collapse collapse justify-content-end" id="navbarCollapse" style="margin-right:250px;">
+                <ul class="navbar-nav ml-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="user_pay.html" style="color: rgb(230, 140, 140); margin-top: 5px; margin-right: 20px;">26500p</a>
+                  </li>
+                  <li class="nav-item dropdown" style="margin-right:20px;">
+                    <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top:4px;">
+                      <span class="notify-badge">1</span>
+                      <img src="bell.jpg" style="width:20px; height:24px"/>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" id="dropright">
+                      <li><a class="dropdown-item" href="answer.html">1 New Question</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="https://img.icons8.com/cotton/32/000000/gender-neutral-user--v3.png"/>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" id="dropright">
+                      <li><a class="dropdown-item" href="mypage.html">My Page</a></li>
+                      <li><a class="dropdown-item" href="mypage_setting.html">Settings</a></li>
+                      <li><a class="dropdown-item" href="main(logout).html">Logout</a></li>
+                    </ul>
+                  </li>
+            </div>
+        
+            </div>
+          </nav>
+    </header>
+    
+    <!---->
+    
+    <div class="box-container" style="display: inline-flex; margin:2%; min-width:94%; min-height:1000px;">
+        <div class="box" style="background-color:whitesmoke; width:300px;margin-top:75px;">
+          <svg class="bd-placeholder-img rounded-circle" width="100%" height="35%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="white"/><text x="50%" y="50%" fill="#FFFFFF" dy=".3em">140x140</text>
+            <image width="100%" height="100%" xlink:href="http://www.dhcom.co.kr/wp-content/uploads/2016/09/corporate-man-laptop.jpg"/>
+          </svg>
+  
+          <h2 style="text-align: center; margin-top: 40px; text-decoration: underline; text-underline-offset:20px; color:black;">
+            Gihong Park
+          </h2>
+          <div style="text-align: center;">
+            <button type="button" class="btn btn-secondary" style="margin-top: 60px; background-color: rgba(0,0,0,0.3); border: transparent;">
+                Edit Profile
+            </button>
+          </div>
+        </div>
+        
+        <div class="box" style="border-bottom:5px solid whitesmoke; height:80px; min-width: 82%;">
+            <nav>
+                <ul>
+                    <li id="st1" class="item"><a id="st2" href="mypage_questions.html">Your Questions</a></li>
+                    <li id="st1" class="item"><a id="st2" href="mypage_study.html">Your StudyGroup</a></li>
+                    <li id="st1" class="item"><a id="st2" href="mypage_setting.html">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+
+    </div>
+    <div class="container" style="top:160px; left:280px; position:absolute; min-width:1450px;">
+        <div style="text-align: center; margin-top: 30px;">
+            <image src="https://pbs.twimg.com/media/DHud2dRVoAA-SLq.jpg"/>
+        </div>
+        <div class="box" style="border-bottom:5px solid whitesmoke; height:30px; min-width: 100%;"></div>
+        <h3 style="margin-left:80px; margin-top:20px; margin-bottom:20px; color: rgba(0, 0, 0, 0.795);">Currently studying</h3>
+        <div style="display: flex;">
+            <div class="card" style="width: 150px; height: 150px; margin-left: 100px;">
+                <img src="https://img.icons8.com/color/240/000000/html-5--v2.png" class="card-img">
+            </div>
+            <div class="card" style="width: 150px; height: 150px; margin-left: 50px;">
+                <img src="https://img.icons8.com/color/240/000000/css3.png" class="card-img">
+            </div>
+        </div>
+        
+        <h3 style="margin-left:80px; margin-top:20px; margin-bottom:20px; color: rgba(0, 0, 0, 0.795);">Mastered</h3>
+        <div style="display: flex;">
+            <div class="card" style="width: 150px; height: 150px; margin-left: 100px;">
+                <img src="data:image/png;base64,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" class="card-img">
+            </div>
+            <div class="card" style="width: 150px; height: 150px; margin-left: 50px;">
+                <img src="https://img.icons8.com/color/240/000000/python--v1.png" class="card-img">
+            </div>
+            <div class="card" style="width: 150px; height: 150px; margin-left: 50px;">
+                <img src="https://img.icons8.com/color/452/c-programming.png" class="card-img">
+            </div>
+            <div class="card" style="width: 150px; height: 150px; margin-left: 50px;">
+                <img src="data:image/png;base64,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" class="card-img">
+            </div>
+            <div class="card" style="width: 150px; height: 150px; margin-left: 50px;">
+                <img src="https://img.icons8.com/color/240/000000/mysql-logo.png" class="card-img">
+            </div>
+        </div>
+    </div>
+</body>

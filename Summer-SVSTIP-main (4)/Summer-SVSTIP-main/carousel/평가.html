@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+         /* left 비율, 줄 높이고 싶으면 height 수정*/
+         div.left {
+        width: 56%;
+        height: 647px;
+        float: left;
+        box-sizing: border-box;
+        border-right: rgba(59, 58, 58, 0.596) solid 3px ;
+        }
+
+        /* right 비율 */
+        div.right {
+            width: 44%;
+            float: right;
+            box-sizing: border-box;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="main(login).html">Corinee</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="main(login).html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="question.html">Question</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="answer.html">Answer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ranking.html">Ranking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mypage.html">My page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="main(logout).html">Logout</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <div class = "left">
+        <div style=" height:200; margin-top: 20px; width: 500px; margin-left:170px;" class="card mb-3">
+            <img src="http://itimg.chosun.com/sitedata/image/202004/30/2020043001669_0.jpg" class="card-img-top" alt="sorry">
+            <div class="card-body">
+              <h5 class="card-title">Title</h5>
+              <p class="card-text">Subject</p>
+              <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+            </div>
+          </div>
+          <div>
+            <img style="height: 200; width: 500px; margin-left:170px; margin-top: 10;" src="./PIG.png" class="img-thumbnail" alt="Sorry">
+        </div>
+    </div>
+
+    <div class = "right">
+        <div style="margin-left:100px; margin-top: 20px;">
+        1.How was the instructor's explanation? (essential) <p></p>
+        <button style="margin-left:15px; width: 100px;  height: 38px;"type=button" class="btn btn-secondary">Excellent</button>
+        <button style="margin-left:15px; width: 100px; height: 38px;" type="button" class="btn btn-secondary">Good</button>
+        <button style="margin-left:15px; width: 100px; height: 38px;" type="button" class="btn btn-secondary">Not bad</button>
+    </div>
+    <p></p> 
+    <!-- 한칸띄우기 margin : 간격을 띄울 수 있게 도와주는 건데, 왼쪽 띄우고 싶으면 margin-left, 오른쪽은 margin-right, 위쪽은 margin-top, 아랫쪽은 margin-bottom || width : 가로 크기 조정하는 것-->
+    <div style="margin-left:150px;">
+        <button style = "margin-left:20px; width: 100px; height: 38px;" type="button"  class="btn btn-secondary">Bad</button>
+        <button style = "width: 100px; height: 38px; margin-left: 20px;"type="button" class="btn btn-secondary">Terrible</button>
+    </div>
+    <p></p>
+    <div style="margin-left:100px; margin-top: 60px;">
+        2.Please leave your instructor's rating!! (required)<p></p>
+        <button style="margin-left:20px; width: 100px; height: 38px;"type=button" class="btn btn-secondary">Perfect</button>
+        <button style="margin-left:20px; width: 100px;" type="button" class="btn btn-secondary">Good</button>
+        <button style="margin-left:20px; width: 110px;" type="button" class="btn btn-secondary">Not bad</button>
+    </div>
+    <p></p> 
+    <!-- 한칸띄우기 margin : 간격을 띄울 수 있게 도와주는 건데, 왼쪽 띄우고 싶으면 margin-left, 오른쪽은 margin-right, 위쪽은 margin-top, 아랫쪽은 margin-bottom || width : 가로 크기 조정하는 것-->
+    <div style="margin-left:160px;">
+        <button style = "margin-left:20px;width: 100px;" type="button"  class="btn btn-secondary">Bad</button>
+        <button style = "width: 100px; margin-left: 20px;"type="button" class="btn btn-secondary">Terrible</button>
+    </div>
+    <div style="margin-top:60px; margin-left: 100px;">
+        3.Do you have anything to say to the instructor? (Choose)<p></p>
+        <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style = "background-color: bisque; width: 400px; height: 150px;" placeholder="Please leave a review."></textarea>
+        </div> 
+        <p></p> 
+        <div>
+            <button style = "margin-left:12px; width: 380px;" type="button" class="btn btn-success">Register for a review</button> 
+    </div>
+     
+</body>
